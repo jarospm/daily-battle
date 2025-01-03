@@ -7,14 +7,56 @@ body {
     margin: 0;
     font-family: Verdana;
     color: #EEE;
+    background: #1B244A;
 }
+
+/* INTRO SECTION */
+
+.intro {
+    margin: 0 auto;
+    max-width: 575px;
+    text-align: center;
+    padding: 20px;
+}
+
+.intro h1 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.intro-text {
+    color: #9AABD8;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.reset-btn {
+    background: transparent;
+    color: #7DD3FC;
+    border: 2px solid #7DD3FC;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Scoreboard', Verdana;
+    transition: all 0.3s;
+}
+
+.reset-btn:hover {
+    background: #7DD3FC;
+    color: #1B244A;
+}
+
+/* SCORES CONTAINER */
 
 .container {
     display: flex;
     justify-content: space-around;
-    width: 575px;
-    height: 385px;
-    background: #1B244A;
+    max-width: 575px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .score-side {
@@ -65,17 +107,31 @@ h3 {
     height: 45px;
     flex-shrink: 0;
     border-radius: 5px;
-    border: 2px solid #9AABD8;
     background: transparent;
     font-family: 'Scoreboard', Verdana;
     font-weight: 400;
     font-size: 18px;
-    color: #9AABD8;
     text-align: center;
 }
 
-.score-btn:hover {
-    background: #9AABD8;
+.score-box.right ~ .button-group .score-btn {
+    border: 2px solid #6EE7B7;
+    color: #6EE7B7;
+}
+
+.score-box.right ~ .button-group .score-btn:hover {
+    background: #6EE7B7;
+    color: #1B244A;
+    cursor: pointer;
+}
+
+.score-box.wrong ~ .button-group .score-btn {
+    border: 2px solid #FDA4AF;
+    color: #FDA4AF;
+}
+
+.score-box.wrong ~ .button-group .score-btn:hover {
+    background: #FDA4AF;
     color: #1B244A;
     cursor: pointer;
 }
