@@ -143,3 +143,24 @@ h3 {
     color: #1B244A;
     cursor: pointer;
 }
+
+/* FOOTER SECTION */
+
+.footer {
+    margin: 40px auto 20px;
+    max-width: 575px;
+    text-align: center;
+    padding: 20px;
+    color: #9AABD8;
+    border-top: 1px solid rgba(154, 171, 216, 0.2);
+}
+
+.footer a {
+    color: #7DD3FC;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #EEE;
+}
