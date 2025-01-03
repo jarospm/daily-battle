@@ -1,8 +1,81 @@
+@font-face {
+    font-family: 'Scoreboard';
+    src: url(./CursedTimerUlil.ttf) format('truetype');
+}
+
 body {
     margin: 0;
+    font-family: Verdana;
+    color: #EEE;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
+    width: 575px;
+    height: 385px;
+    background: #1B244A;
+}
+
+.score-side {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.score-box {
+    background-color: #080001;
+    width: 155px;
+    height: 120px;
+    border-radius: 4px;
+    font-family: 'Scoreboard', Verdana;
+    font-size: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.right {
+    color: #059669;
+}
+
+.wrong {
+    color: #E11D48;
+}
+
+.button-group {
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.score-btn {
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 2px solid #9AABD8;
+    background: transparent;
+    font-family: 'Scoreboard', Verdana;
+    font-weight: 400;
+    font-size: 18px;
+    color: #9AABD8;
+    text-align: center;
+}
+
+.score-btn:hover {
+    background: #9AABD8;
+    color: #1B244A;
+    cursor: pointer;
 }
